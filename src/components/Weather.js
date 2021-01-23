@@ -6,7 +6,13 @@ class Weather extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
-      items: []
+      items: [],
+      sunny: "https://icons-for-free.com/iconfiles/png/512/sunny+temperature+weather+icon-1320196637430890623.png",
+      partlyCloudy: "https://www.iconbunny.com/icons/media/catalog/product/4/8/484.10-partly-cloudy-i-icon-iconbunny.jpg",
+      amShowers: "https://iconarchive.com/download/i43447/oxygen-icons.org/oxygen/Status-weather-showers-night.ico",
+      pmShowers: "https://iconarchive.com/download/i43446/oxygen-icons.org/oxygen/Status-weather-showers-day.ico",
+      showers: "https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/weather-showers-scattered-512.png",
+      cloudy: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0KuwT4iZ1TWaelvthfb4_cbmGXyaiyRqbw&usqp=CAU"
     };
   }
 
@@ -37,7 +43,7 @@ class Weather extends React.Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <div>
+        <div className = "result">
           <table className = "table">
           <tr className = "date">
             <td>Jan {items[0].date.substring(4,5)}</td>
@@ -52,16 +58,16 @@ class Weather extends React.Component {
             <td>Jan {items[9].date.substring(3,5)}</td>
           </tr>
           <tr className = "forecast">
-            <td>{items[0].forecast.substring(0,3)}</td>
-            <td>{items[1].forecast.substring(0,3)}</td>
-            <td>{items[2].forecast.substring(0,3)}</td>
-            <td>{items[3].forecast.substring(0,3)}</td>
-            <td>{items[4].forecast.substring(0,3)}</td>
-            <td>{items[5].forecast.substring(0,3)}</td>
-            <td>{items[6].forecast.substring(0,3)}</td>
-            <td>{items[7].forecast.substring(0,3)}</td>
-            <td>{items[8].forecast.substring(0,3)}</td>
-            <td>{items[9].forecast.substring(0,3)}</td>
+            <td><img src = {this.state.sunny}/></td>
+            <td><img src = {this.state.partlyCloudy}/></td>
+            <td><img src = {this.state.partlyCloudy}/></td>
+            <td><img src = {this.state.cloudy}/></td>
+            <td><img src = {this.state.sunny}/></td>
+            <td><img src = {this.state.showers}/></td>
+            <td><img src = {this.state.cloudy}/></td>
+            <td><img src = {this.state.amShowers}/></td>
+            <td><img src = {this.state.pmShowers}/></td>
+            <td><img src = {this.state.sunny}/></td>
           </tr>
           <tr className = "low">
             <td>Low: {items[0].low_temp}{'\u00b0'}</td>
@@ -87,6 +93,18 @@ class Weather extends React.Component {
             <td>High: {items[8].high_temp}{'\u00b0'}</td>
             <td>High: {items[9].high_temp}{'\u00b0'}</td>
           </tr>
+          <tr className = "prec">
+            <td>Precipitation: {items[0].percent_precipitation}%</td>
+            <td>Precipitation: {items[1].percent_precipitation}%</td>
+            <td>Precipitation: {items[2].percent_precipitation}%</td>
+            <td>Precipitation: {items[3].percent_precipitation}%</td>
+            <td>Precipitation: {items[4].percent_precipitation}%</td>
+            <td>Precipitation: {items[5].percent_precipitation}%</td>
+            <td>Precipitation: {items[6].percent_precipitation}%</td>
+            <td>Precipitation: {items[7].percent_precipitation}%</td>
+            <td>Precipitation: {items[8].percent_precipitation}%</td>
+            <td>Precipitation: {items[9].percent_precipitation}%</td>
+          </tr>
           </table>
         </div>
       );
@@ -94,18 +112,5 @@ class Weather extends React.Component {
   }
 }
 
-/*<tr>
-<td>{items[0].percent_precipitation}</td>
-<td>{items[1].percent_precipitation}</td>
-<td>{items[2].percent_precipitation}</td>
-<td>{items[3].percent_precipitation}</td>
-<td>{items[4].percent_precipitation}</td>
-<td>{items[5].percent_precipitation}</td>
-<td>{items[6].percent_precipitation}</td>
-<td>{items[7].percent_precipitation}</td>
-<td>{items[8].percent_precipitation}</td>
-<td>{items[9].percent_precipitation}</td>
-</tr>
-*/
 
 export default Weather
