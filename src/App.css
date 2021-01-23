@@ -44,13 +44,12 @@
 
 .table {
   width: 1300px;
-  height: 150px;
+  height: 130px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 100px;
   font-weight: bold;
   border-collapse: collapse;
 }
@@ -63,28 +62,23 @@ td {
 
 .date {
   vertical-align: top;
-  height: 15px;
 }
 
 .low {
-  font-size: 12px;
+  font-size: 11px;
   vertical-align: bottom;
-  height: 9px;
 }
 
 .high {
-  font-size: 12px;
+  font-size: 11px;
   vertical-align: bottom;
-  height: 9px;
 }
 
 .prec {
-  font-size: 12px;
+  font-size: 11px;
   vertical-align: bottom;
-  height: 9px;
 }
 
 img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
 }
