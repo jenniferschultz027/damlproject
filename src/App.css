@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.table {
+  width: 1600px;
+  height: 160px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-weight: bold;
+  border-collapse: collapse;
+}
+
+td {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-collapse: collapse;
+}
+
+.date {
+  vertical-align: top;
+  height: 15px;
+}
+
+.low {
+  font-size: 12px;
+  vertical-align: bottom;
+  height: 9px;
+}
+
+.high {
+  font-size: 12px;
+  vertical-align: bottom;
+  height: 9px;
+}
+
