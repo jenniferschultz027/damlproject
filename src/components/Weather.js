@@ -4,7 +4,6 @@ class Weather extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      error: null,
       isLoaded: false,
       items: [],
       weather: {
@@ -27,21 +26,13 @@ class Weather extends React.Component {
             isLoaded: true,
             items: result
           });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
+        } 
       )
   }
 
   render() {
-    const { error, isLoaded, items } = this.state;
-    if (error) {
-      return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
+    const { isLoaded, items } = this.state;
+    if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
       return (
