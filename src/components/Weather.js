@@ -8,7 +8,7 @@ class Weather extends React.Component {
       items: [],
       weather: {
         sunny: "https://icons-for-free.com/iconfiles/png/512/sunny+temperature+weather+icon-1320196637430890623.png",
-        partlyCloudy: "https://www.iconbunny.com/icons/media/catalog/product/4/8/484.10-partly-cloudy-i-icon-iconbunny.jpg",
+        partlyCloudy: "https://lh3.googleusercontent.com/proxy/ZCYpLTsoM23ERuSd6vjZrXGZc4cZmvt8Y0C1CptKPXr3RjUUHys__aXWz5K0Cf4Fj628iC-XWbYs1oxS3gY5FEeafm5M-80",
         amShowers: "https://iconarchive.com/download/i43447/oxygen-icons.org/oxygen/Status-weather-showers-night.ico",
         pmShowers: "https://iconarchive.com/download/i43446/oxygen-icons.org/oxygen/Status-weather-showers-day.ico",
         showers: "https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/weather-showers-scattered-512.png",
