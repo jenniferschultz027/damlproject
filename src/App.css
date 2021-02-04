@@ -44,10 +44,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  font-size: .8rem;
+  font-size: .75rem;
 }
 .percent {
-  font-size: .8rem;
+  font-size: .65rem;
 }
 
 .forecast {
