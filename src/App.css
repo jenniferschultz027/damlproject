@@ -1,7 +1,65 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.day {
+  font-weight: bold;
+  width: 8vw;
+  height: 9vw;
+  background: white;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  outline: 2px solid black;
+}
+
+.date {
+  height: 20%;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.image {
+  height: 65%;
+  width: 65%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp {
+  height: 28%; 
+  width: 80%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: .8rem;
+}
+.percent {
+  font-size: .8rem;
+}
+
+.forecast {
+  width: 80vw;
+  height: 10vw;
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -82,3 +140,4 @@ td {
 img {
   width: 60px;
 }
+*/
